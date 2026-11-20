@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Вяльцева Валерия</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        display: ['Unbounded', 'sans-serif'],
+                    },
+                    colors: {
+                        glass: 'rgba(255, 255, 255, 0.6)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #f0f4f8;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,0.05) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,0.05) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,0.05) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+        
+        .glass-pill {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.04);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+        
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.6;
+        }
+        
+        ul.custom-list li::before {
+            content: "•";
+            color: #3b82f6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 antialiased p-4 pb-10 relative overflow-x-hidden">
+    <!-- Декоративные элементы фона -->
+    <div class="blob bg-blue-300 w-64 h-64 top-[-5%] left-[-10%]"></div>
+    <div class="blob bg-purple-300 w-72 h-72 top-[20%] right-[-10%]"></div>
+    <div class="blob bg-emerald-200 w-72 h-72 bottom-[10%] left-[-10%]"></div>
+    
+    <main class="max-w-xl mx-auto space-y-5 relative z-10 pt-4">
+        <!-- Шапка -->
+        <header class="glass-card rounded-3xl p-5 flex items-start gap-4">
+            <!-- Локальное фото -->
+            <img src="avatar.jpg" alt="Мое фото" class="w-20 h-20 rounded-2xl object-cover shadow-sm border-2 border-white/50 shrink-0">
+            
+            <div class="flex-1 min-w-0">
+                <h1 class="font-display font-bold text-lg leading-tight text-slate-900 truncate">Вяльцева Валерия</h1>
+                <p class="text-[13px] leading-snug font-semibold text-blue-700 mt-1">
+                    Студентка 1 курса УрФУ<br>Программная инженерия
+                </p>
+                
+                <div class="flex gap-1.5 mt-3">
+                    <a href="https://vk.com/lera_418" class="glass-pill px-2 py-1.5 rounded-full hover:bg-white transition text-slate-700 text-[11px] font-medium gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.575 2.389 7.175 2.389z"/>
+                        </svg>
+                        ВК
+                    </a>
+                    
+                    <a href="https://github.com/omnibenevolent" class="glass-pill px-2 py-1.5 rounded-full hover:bg-white transition text-slate-700 text-[11px] font-medium gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    
+                    <a href="mailto:vyaltsevav09@yandex.ru" class="glass-pill px-2 py-1.5 rounded-full hover:bg-white transition text-slate-700 text-[11px] font-medium gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Почта
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Опыт работы -->
+        <section class="glass-card rounded-3xl p-5">
+            <h2 class="font-display font-bold text-lg mb-4 text-slate-900 border-b border-slate-300/50 pb-2">Опыт работы</h2>
+            
+            <div class="space-y-6">
+                <!-- Gesti.tech -->
+                <div>
+                    <div class="flex justify-between items-baseline flex-wrap gap-2 mb-1.5">
+                        <h3 class="font-bold text-[15px] text-slate-900">Разработчик библиотеки</h3>
+                        <span class="text-[10px] font-medium text-slate-400 uppercase tracking-wider">Январь 2026 — Март 2026</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-6 h-6 rounded-md bg-white border border-slate-200 p-0.5 shrink-0 flex items-center justify-center shadow-sm">
+                            <img src="https://habrastorage.org/getpro/moikrug/uploads/company/100/009/243/8/logo/medium_63ffa886eac8a4bd681fbe55f218ae59.png" alt="Gesti.tech" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-[13px] font-semibold text-slate-800">Gesti.tech</p>
+                    </div>
+                    
+                    <ul class="text-[13px] text-slate-700 space-y-1 list-none custom-list pl-4">
+                        <li>Разработка и проектирование архитектуры встраиваемого программного модуля.</li>
+                        <li>Реализация беспроводного обновления прошивки (OTA-updates) для оперативного устранения сбоев на стороне пользователя.</li>
+                    </ul>
+                </div>
+                
+                <!-- Инженерный центр УРФУ -->
+                <div>
+                    <div class="flex justify-between items-baseline flex-wrap gap-2 mb-1.5">
+                        <h3 class="font-bold text-[15px] text-slate-900">Архитектор программного обеспечения</h3>
+                        <span class="text-[10px] font-medium text-slate-400 uppercase tracking-wider">Январь 2025 — Февраль 2025</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-6 h-6 rounded-md bg-white border border-slate-200 p-0.5 shrink-0 flex items-center justify-center shadow-sm">
+                            <img src="https://icctm.ru/uploads/I_Cz_Urfu_czvet_895ff77d6e.svg" alt="Инженерный центр УрФУ" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-[13px] font-semibold text-slate-800">Инженерный центр УрФУ</p>
+                    </div>
+                    
+                    <ul class="text-[13px] text-slate-700 space-y-1 list-none custom-list pl-4">
+                        <li>Разработка технологии управления группой БПЛА ("рой дронов") для визуализации зоны покрытия в реальном времени.</li>
+                        <li>Проведение CustDev-исследований и интервью с потенциальными пользователями.</li>
+                    </ul>
+                </div>
+                
+                <!-- Doubletapp -->
+                <div>
+                    <div class="flex justify-between items-baseline flex-wrap gap-2 mb-1.5">
+                        <h3 class="font-bold text-[15px] text-slate-900">ML-инженер</h3>
+                        <span class="text-[10px] font-medium text-slate-400 uppercase tracking-wider">Январь 2024 — Февраль 2024</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-6 h-6 rounded-md bg-white border border-slate-200 p-0.5 shrink-0 flex items-center justify-center shadow-sm">
+                            <img src="https://fra1.digitaloceanspaces.com/cdmo/fra1/438ZpyHaVon7.PNG" alt="Doubletapp" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-[13px] font-semibold text-slate-800">Doubletapp</p>
+                    </div>
+                    
+                    <ul class="text-[13px] text-slate-700 space-y-1 list-none custom-list pl-4">
+                        <li>Предобработка текстовых данных.</li>
+                        <li>Настройка валидации моделей и мониторинг их работы.</li>
+                        <li>Цель проекта: получение краткого содержания документов с помощью нейронных сетей.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Хард скиллы -->
+        <section class="glass-card rounded-3xl p-5">
+            <h2 class="font-display font-bold text-lg mb-4 text-slate-900 border-b border-slate-300/50 pb-2">Хард скиллы</h2>
+            
+            <div class="space-y-5">
+                <div>
+                    <h4 class="text-[13px] font-bold text-slate-800 mb-2">Языки и Базы данных</h4>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">C++</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Python</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">JavaScript</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">MySQL</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-[13px] font-bold text-slate-800 mb-2">Веб-разработка</h4>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">HTML5</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">React</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Tailwind CSS</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Web-дизайн</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Веб-программирование</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Frontend</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Backend</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-[13px] font-bold text-slate-800 mb-2">Инструменты и ОС</h4>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Linux</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">GitHub</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Docker</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Wireshark</span>
+                        <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Logisim Evolution</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Софт скиллы -->
+        <section class="glass-card rounded-3xl p-5">
+            <h2 class="font-display font-bold text-lg mb-4 text-slate-900 border-b border-slate-300/50 pb-2">Софт скиллы</h2>
+            
+            <div class="flex flex-wrap gap-1.5">
+                <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Публичные выступления</span>
+                <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">CustDev и интервью</span>
+                <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Соблюдение дедлайнов</span>
+                <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Командная работа</span>
+                <span class="glass-pill px-2.5 py-1 text-xs font-medium rounded-lg text-slate-700">Работа с требованиями</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
